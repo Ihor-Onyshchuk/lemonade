@@ -3,7 +3,7 @@ import {resultData} from './services';
 
 function App() {
   useEffect(() => {
-    console.log('result data', resultData);
+    
   }, []);
 
   return (

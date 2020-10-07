@@ -3,9 +3,7 @@ import {data} from '../data';
 
 const dataFormater = (data) => {
   let resultAnswers;
-  console.log('data', data)
   const currentQuestion = shuffle(data)[0];
-  console.log('current question', currentQuestion)
   const {answers, correct, id, question} = currentQuestion;
   const correctAnswer = shuffle(correct)[0];
 
@@ -32,6 +30,3 @@ export const resultData = map(data, (question, step) => {
     [step]: [dataFormater(question, step)]
   }
 })
-
-console.log('result data', resultData);
-
