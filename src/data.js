@@ -1,4 +1,4 @@
-const data = {
+export const data = {
   500: [
     {
       id: 1,
