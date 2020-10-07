@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
-import {dataFormater} from './services';
+import {resultData} from './services';
 
 function App() {
   useEffect(() => {
-    console.log('data formateer', dataFormater());
+    console.log('result data', resultData);
   }, []);
 
   return (
-    <div className="App">
+    <div>
       Hello man!
     </div>
   );

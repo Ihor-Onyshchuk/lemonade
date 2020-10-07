@@ -1,9 +1,11 @@
-import {shuffle} from 'lodash';
+import {shuffle, take, map} from 'lodash';
 import {data} from '../data';
 
-export const dataFormater = (step = 500) => {
+const dataFormater = (data) => {
   let resultAnswers;
-  const currentQuestion = shuffle(data[step])[0];
+  console.log('data', data)
+  const currentQuestion = shuffle(data)[0];
+  console.log('current question', currentQuestion)
   const {answers, correct, id, question} = currentQuestion;
   const correctAnswer = shuffle(correct)[0];
 
@@ -13,7 +15,7 @@ export const dataFormater = (step = 500) => {
   }
 
   if (answers.length > 3) {
-    const answersArray = shuffle(answers).slice(0, 3);
+    const answersArray = take(shuffle(answers), 3);
     resultAnswers = [...answersArray, correctAnswer];
   }
 
@@ -24,4 +26,12 @@ export const dataFormater = (step = 500) => {
     answers: resultAnswers,
   }
 }
+
+export const resultData = map(data, (question, step) => {
+  return {
+    [step]: [dataFormater(question, step)]
+  }
+})
+
+console.log('result data', resultData);
 
