@@ -2,39 +2,39 @@ export const data = {
   500: [
     {
       id: 1,
-      question: "the name of Asterix And Obelix's dog?",
+      question: "Choose the right name of Asterix And Obelix's dog?",
       correct: ["Dogmatix"],
       answers: [
         "Lui",
         "Bosco",
-        "Borys",
-        "Buddy"
+        // "Borys",
+        // "Buddy"
       ]
     },
   ],
   1000: [
     {
       id: 2,
-      question: "question",
-      correct: ["sfsdfsad"],
+      question: "how old are 20 years guy?",
+      correct: ["20"],
       answers: [
-        "sfsdfsad",
-        "afasdfasd",
-        "sdfasd",
-        "asdfasf"
+        "12",
+        "34",
+        "80",
+        "78"
       ]
     },
   ],
   2000: [
     {
       id: 3,
-      question: "question",
-      correct: ["sfsdfsad"],
+      question: "2^5",
+      correct: ["32"],
       answers: [
-        "sfsdfsad",
-        "afasdfasd",
-        "sdfasd",
-        "asdfasf"
+        "23",
+        "33",
+        "34",
+        "54"
       ]
     },
   ],
