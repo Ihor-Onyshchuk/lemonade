@@ -3,7 +3,7 @@ export const data = {
     {
       id: 1,
       question: "Choose the right name of Asterix And Obelix's dog?",
-      correct: ["Dogmatix"],
+      corrects: ["Dogmatix"],
       answers: [
         "Lui",
         "Bosco",
@@ -16,7 +16,7 @@ export const data = {
     {
       id: 2,
       question: "how old are 20 years guy?",
-      correct: ["20"],
+      corrects: ["20"],
       answers: [
         "12",
         "34",
@@ -29,7 +29,7 @@ export const data = {
     {
       id: 3,
       question: "2^5",
-      correct: ["32"],
+      corrects: ["32"],
       answers: [
         "23",
         "33",
@@ -42,7 +42,7 @@ export const data = {
     {
       id: 4,
       question: "question",
-      correct: ["sfsdfsad"],
+      corrects: ["sfsdfsad"],
       answers: [
         "sfsdfsad",
         "afasdfasd",
@@ -55,7 +55,7 @@ export const data = {
     {
       id: 5,
       question: "question",
-      correct: ["sfsdfsad"],
+      corrects: ["sfsdfsad"],
       answers: [
         "sfsdfsad",
         "afasdfasd",
@@ -68,7 +68,7 @@ export const data = {
     {
       id: 6,
       question: "question",
-      correct: ["sfsdfsad"],
+      corrects: ["sfsdfsad"],
       answers: [
         "sfsdfsad",
         "afasdfasd",
@@ -81,7 +81,7 @@ export const data = {
     {
       id: 7,
       question: "question",
-      correct: ["sfsdfsad"],
+      corrects: ["sfsdfsad"],
       answers: [
         "sfsdfsad",
         "afasdfasd",
@@ -94,7 +94,7 @@ export const data = {
     {
       id: 8,
       question: "question",
-      correct: ["sfsdfsad"],
+      corrects: ["sfsdfsad"],
       answers: [
         "sfsdfsad",
         "afasdfasd",
@@ -107,7 +107,7 @@ export const data = {
     {
       id: 9,
       question: "question",
-      correct: ["sfsdfsad"],
+      corrects: ["sfsdfsad"],
       answers: [
         "sfsdfsad",
         "afasdfasd",
@@ -120,7 +120,7 @@ export const data = {
     {
       id: 10,
       question: "question",
-      correct: ["sfsdfsad"],
+      corrects: ["sfsdfsad"],
       answers: [
         "sfsdfsad",
         "afasdfasd",
@@ -133,7 +133,7 @@ export const data = {
     {
       id: 11,
       question: "question",
-      correct: ["sfsdfsad"],
+      corrects: ["sfsdfsad"],
       answers: [
         "sfsdfsad",
         "afasdfasd",
@@ -146,7 +146,7 @@ export const data = {
     {
       id: 12,
       question: "question",
-      correct: ["sfsdfsad"],
+      corrects: ["sfsdfsad"],
       answers: [
         "sfsdfsad",
         "afasdfasd",

@@ -1,69 +1,95 @@
 import React, { useEffect, useState } from 'react';
-import {map} from 'lodash';
+import {keys} from 'lodash';
+import cx from 'classnames';
 
-import {getQuestion, getAllPrise} from './services';
+import {getQuestion} from './services';
 import {data} from './data';
+
+import './index.scss';
+
+const priseList = keys(data);
+
+const defaultAnswerState = {
+  answer: '',
+  wrong: false,
+  correct: false,
+  selected: false,
+};
+
+const drumroll = () => new Promise((resolve) => {
+  setTimeout(() => {
+    resolve();
+  }, 2000);
+})
 
 const App = () => {
   const [currentQuestion, setCurrentQuestion] = useState({});
-  const [priseStep, setPriseStep] = useState(0);
-  const [prise, setPrise] = useState([]);
+  const [step, setStep] = useState(0);
   const [mode, setMode] = useState('start');
+  const [answerState, setAnswerState] = useState(defaultAnswerState);
 
   useEffect(() => {
-    setCurrentQuestion(getQuestion(data, prise[priseStep]));
-    setPrise(getAllPrise(data));
-  }, []);
+    const question = getQuestion(data, priseList[step])
+    setCurrentQuestion(question);
+  }, [step]);
 
-  const handleStartClick = () => {
+  const handleStart = () => {
     setMode('game');
+    setStep(0)
   }
 
-  const handleAnswer = (event) => {
-    const answer = event.target.innerText;
-    const correct = currentQuestion.correct;
-    const nextStep = priseStep + 1;
+  const handleAnswerSubmit = (answer) => {
+    setAnswerState({ ...answerState, answer, selected: true});
+    const isCorrect = answer.includes(currentQuestion.correct);
 
-    if (answer.includes(correct)) {
-      setCurrentQuestion(getQuestion(data, prise[nextStep]));
-      setPriseStep(nextStep);
-    } else {
-      setMode('end')
-      setCurrentQuestion({})
-    }
+    drumroll().then(() => {
+      if (isCorrect) {
+        setAnswerState((prevState) => ({...prevState, selected: false, correct: true}));
+        drumroll().then(() => {
+          setAnswerState(defaultAnswerState);
+          setStep(step + 1);
+        })
+      } else {
+        setAnswerState((prevState) => ({...prevState, selected: false, wrong: true}));
+        drumroll().then(() => {
+          setAnswerState(defaultAnswerState);
+          setMode('end');
+        })
+      }
+    })
   }
-
-  const {answers, question} = currentQuestion;
 
   return (
     <div>
       {mode === 'start' && (
         <div>
           Start
-          <button onClick={handleStartClick}>start</button>
+          <button onClick={handleStart}>start</button>
         </div>
       )}
        {mode === 'game' && (
         <div>
           <div>
-            <h2>{question}</h2>
-            <div onClick={handleAnswer}>
-              <button>
-                <b>{answers[0]}</b>
-              </button>
-              <button>
-                <b>{answers[1]}</b>
-              </button>
-              <button>
-                <b>{answers[2]}</b>
-              </button>
-              <button>
-                <b>{answers[3]}</b>
-              </button>
+            <h2>{currentQuestion.question}</h2>
+            <div>
+              {currentQuestion.answers.map((answer, i) => (
+                <button
+                  className={cx(answerState.answer === answer && {
+                    selected: answerState.selected,
+                    correct: answerState.correct,
+                    wrong: answerState.wrong,
+                })}
+                  key={i} onClick={() => handleAnswerSubmit(answer)}
+                >
+                  {answer}
+                </button >
+              ))}
             </div>
           </div>
           <div>
-        {!!prise.length && map(prise, (prise, index) => (<div key={index}>{prise}</div>)).reverse()}
+            {!!priseList.length && priseList.map((prise, i) => (
+              <div className={cx({earned: i < step, active: i === step})} key={prise}>{prise}</div>
+            ))}
           </div>
         </div>
       )}
@@ -71,7 +97,8 @@ const App = () => {
         <div>
           <div>
             Total score: 
-            <b>$ {!priseStep ? 0 : prise[priseStep - 1]} earned</b>
+            <b>$ {!step ? 0 : priseList[step - 1]} earned</b>
+            <button onClick={handleStart}>Play again</button>
           </div>
         </div>
       )}
