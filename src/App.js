@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import {keys} from 'lodash';
 import cx from 'classnames';
 
+import Start from './components/Start/Start';
+
 import {getQuestion} from './services';
 import {data} from './data';
 
@@ -58,12 +60,9 @@ const App = () => {
   }
 
   return (
-    <div>
+    <>
       {mode === 'start' && (
-        <div>
-          Start
-          <button onClick={handleStart}>start</button>
-        </div>
+        <Start onClick={handleStart} btnName="Start"/>
       )}
        {mode === 'game' && (
         <div>
@@ -100,7 +99,7 @@ const App = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
 
