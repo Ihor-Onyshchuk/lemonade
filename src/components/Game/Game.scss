@@ -1,0 +1,61 @@
+@import '../../assets/scss/variables.scss';
+
+.game {
+  width: 100%;
+  height: 100%;
+  background-color: $black-5;
+
+  &__wrapper {
+    padding: 21px 16px 24px;
+  }
+
+  &__toggle {
+    position: fixed;
+    top: 21px;
+    right: 16px;
+    cursor: pointer;
+    width: 16px;
+    height: 14px;
+    background: $black-5;
+
+    &__bar1,
+    &__bar2,
+    &__bar3 {
+      width: 16px;
+      height: 2px;
+      background: $black-100;
+      margin-bottom: 8px;
+      transition: all .3s ease-in-out;
+    }
+  }
+
+  &__toggle_open {
+    transition: all .3s ease-in-out;
+
+    .game__toggle__bar1 {
+      transform: rotate(45deg) translate(8px, 7px);
+    }
+
+    .game__toggle__bar2 {
+      opacity: 0;
+    }
+
+    .game__toggle__bar3 {
+      transform: rotate(-45deg) translate(7px, -6px);
+    }
+  }
+
+  &__question {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: $black-100;
+    margin-top: 115px;
+  }
+
+  &__buttons {
+    margin-top: 97px;
+  }
+}

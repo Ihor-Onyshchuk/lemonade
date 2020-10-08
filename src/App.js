@@ -6,6 +6,7 @@ import Start from './components/Start/Start';
 
 import {getQuestion} from './services';
 import {data} from './data';
+import Game from './components/Game/Game';
 
 const priseList = keys(data);
 
@@ -64,31 +65,19 @@ const App = () => {
       {mode === 'start' && (
         <Start onClick={handleStart}/>
       )}
-       {mode === 'game' && (
-        <div>
-          <div>
-            <h2>{currentQuestion.question}</h2>
-            <div>
-              {currentQuestion.answers.map((answer, i) => (
-                <button
-                  className={cx(answerState.answer === answer && {
-                    selected: answerState.selected,
-                    correct: answerState.correct,
-                    wrong: answerState.wrong,
-                })}
-                  key={i} onClick={() => handleAnswerSubmit(answer)}
-                >
-                  {answer}
-                </button >
-              ))}
-            </div>
-          </div>
+      {mode === 'game' && (
+        <>
+          <Game
+            currentQuestion={currentQuestion}
+            answerState={answerState}
+            onSubmit={handleAnswerSubmit}
+          />
           <div>
             {!!priseList.length && priseList.map((prise, i) => (
               <div className={cx({earned: i < step, active: i === step})} key={prise}>{prise}</div>
             ))}
           </div>
-        </div>
+        </>
       )}
       {mode === 'end' && (
         <div>
