@@ -1,5 +1,5 @@
 import React from 'react';
-import PrimaryBtn from '../PrimaryBtn/PrimaryBtn';
+import PrimaryBtn from '../PrimaryButton/PrimaryButton';
 import './Start.scss';
 
 const Start = (props) => {

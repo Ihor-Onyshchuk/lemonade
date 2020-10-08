@@ -1,5 +1,5 @@
 import React from 'react';
-import './PrimaryBtn.scss';
+import './PrimaryButton.scss';
 
 const PrimaryBtn = ({btnName, onClick}) => {
   return (

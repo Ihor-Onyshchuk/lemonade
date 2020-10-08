@@ -72,11 +72,11 @@ const App = () => {
             answerState={answerState}
             onSubmit={handleAnswerSubmit}
           />
-          <div>
+          {/* <div>
             {!!priseList.length && priseList.map((prise, i) => (
               <div className={cx({earned: i < step, active: i === step})} key={prise}>{prise}</div>
             ))}
-          </div>
+          </div> */}
         </>
       )}
       {mode === 'end' && (
