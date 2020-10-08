@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import {keys} from 'lodash';
 
 import SalutePage from './components/SalutePage/SalutePage';
+import GamePage from './components/GamePage/GamePage';
 
 import {getQuestion} from './services';
 import {data} from './data';
-import Game from './components/Game/Game';
 
 const priseList = keys(data);
 const saluteModes = ['start', 'end'];
@@ -75,15 +75,13 @@ const App = () => {
         />
       )}
       {mode === 'game' && (
-        <>
-          <Game
-            priseList={priseList}
-            step={step}
-            currentQuestion={currentQuestion}
-            answerState={answerState}
-            onSubmit={handleAnswerSubmit}
-          />
-        </>
+        <GamePage
+          priseList={priseList}
+          step={step}
+          currentQuestion={currentQuestion}
+          answerState={answerState}
+          onSubmit={handleAnswerSubmit}
+        />
       )}
     </>
   );

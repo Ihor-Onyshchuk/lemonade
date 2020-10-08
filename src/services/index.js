@@ -1,6 +1,6 @@
 import {shuffle, take} from 'lodash';
 
-const dummyAnswers = ['hello', 'cat', 'cool'];
+const dummyAnswers = ['hello', 'cat', 'cool', 'dude', 'McFly'];
 
 export const getQuestion = (data, step = 500) => {
   const currentQuestion = shuffle(data[step])[0];

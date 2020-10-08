@@ -38,121 +38,121 @@ export const data = {
       ]
     },
   ],
-  4000: [
-    {
-      id: 4,
-      question: "question",
-      corrects: ["sfsdfsad"],
-      answers: [
-        "sfsdfsad",
-        "afasdfasd",
-        "sdfasd",
-        "asdfasf"
-      ]
-    },
-  ],
-  8000: [
-    {
-      id: 5,
-      question: "question",
-      corrects: ["sfsdfsad"],
-      answers: [
-        "sfsdfsad",
-        "afasdfasd",
-        "sdfasd",
-        "asdfasf"
-      ]
-    },
-  ],
-  16000: [
-    {
-      id: 6,
-      question: "question",
-      corrects: ["sfsdfsad"],
-      answers: [
-        "sfsdfsad",
-        "afasdfasd",
-        "sdfasd",
-        "asdfasf"
-      ]
-    },
-  ],
-  32000: [
-    {
-      id: 7,
-      question: "question",
-      corrects: ["sfsdfsad"],
-      answers: [
-        "sfsdfsad",
-        "afasdfasd",
-        "sdfasd",
-        "asdfasf"
-      ]
-    },
-  ],
-  64000: [
-    {
-      id: 8,
-      question: "question",
-      corrects: ["sfsdfsad"],
-      answers: [
-        "sfsdfsad",
-        "afasdfasd",
-        "sdfasd",
-        "asdfasf"
-      ]
-    },
-  ],
-  125000: [
-    {
-      id: 9,
-      question: "question",
-      corrects: ["sfsdfsad"],
-      answers: [
-        "sfsdfsad",
-        "afasdfasd",
-        "sdfasd",
-        "asdfasf"
-      ]
-    },
-  ],
-  250000: [
-    {
-      id: 10,
-      question: "question",
-      corrects: ["sfsdfsad"],
-      answers: [
-        "sfsdfsad",
-        "afasdfasd",
-        "sdfasd",
-        "asdfasf"
-      ]
-    },
-  ],
-  500000: [
-    {
-      id: 11,
-      question: "question",
-      corrects: ["sfsdfsad"],
-      answers: [
-        "sfsdfsad",
-        "afasdfasd",
-        "sdfasd",
-        "asdfasf"
-      ]
-    },
-  ],
-  1000000: [
-    {
-      id: 12,
-      question: "question",
-      corrects: ["sfsdfsad"],
-      answers: [
-        "sfsdfsad",
-        "afasdfasd",
-        "sdfasd",
-        "asdfasf"
-      ]
-    },
-  ],
+  // 4000: [
+  //   {
+  //     id: 4,
+  //     question: "question",
+  //     corrects: ["sfsdfsad"],
+  //     answers: [
+  //       "sfsdfsad",
+  //       "afasdfasd",
+  //       "sdfasd",
+  //       "asdfasf"
+  //     ]
+  //   },
+  // ],
+  // 8000: [
+  //   {
+  //     id: 5,
+  //     question: "question",
+  //     corrects: ["sfsdfsad"],
+  //     answers: [
+  //       "sfsdfsad",
+  //       "afasdfasd",
+  //       "sdfasd",
+  //       "asdfasf"
+  //     ]
+  //   },
+  // ],
+  // 16000: [
+  //   {
+  //     id: 6,
+  //     question: "question",
+  //     corrects: ["sfsdfsad"],
+  //     answers: [
+  //       "sfsdfsad",
+  //       "afasdfasd",
+  //       "sdfasd",
+  //       "asdfasf"
+  //     ]
+  //   },
+  // ],
+  // 32000: [
+  //   {
+  //     id: 7,
+  //     question: "question",
+  //     corrects: ["sfsdfsad"],
+  //     answers: [
+  //       "sfsdfsad",
+  //       "afasdfasd",
+  //       "sdfasd",
+  //       "asdfasf"
+  //     ]
+  //   },
+  // ],
+  // 64000: [
+  //   {
+  //     id: 8,
+  //     question: "question",
+  //     corrects: ["sfsdfsad"],
+  //     answers: [
+  //       "sfsdfsad",
+  //       "afasdfasd",
+  //       "sdfasd",
+  //       "asdfasf"
+  //     ]
+  //   },
+  // ],
+  // 125000: [
+  //   {
+  //     id: 9,
+  //     question: "question",
+  //     corrects: ["sfsdfsad"],
+  //     answers: [
+  //       "sfsdfsad",
+  //       "afasdfasd",
+  //       "sdfasd",
+  //       "asdfasf"
+  //     ]
+  //   },
+  // ],
+  // 250000: [
+  //   {
+  //     id: 10,
+  //     question: "question",
+  //     corrects: ["sfsdfsad"],
+  //     answers: [
+  //       "sfsdfsad",
+  //       "afasdfasd",
+  //       "sdfasd",
+  //       "asdfasf"
+  //     ]
+  //   },
+  // ],
+  // 500000: [
+  //   {
+  //     id: 11,
+  //     question: "question",
+  //     corrects: ["sfsdfsad"],
+  //     answers: [
+  //       "sfsdfsad",
+  //       "afasdfasd",
+  //       "sdfasd",
+  //       "asdfasf"
+  //     ]
+  //   },
+  // ],
+  // 1000000: [
+  //   {
+  //     id: 12,
+  //     question: "question",
+  //     corrects: ["sfsdfsad"],
+  //     answers: [
+  //       "sfsdfsad",
+  //       "afasdfasd",
+  //       "sdfasd",
+  //       "asdfasf"
+  //     ]
+  //   },
+  // ],
 } 

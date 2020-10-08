@@ -3,7 +3,7 @@ import cx from 'classnames'
 import GameButton from '../GameButton/GameButton';
 import Modal from '../Modal/Modal';
 import PriseList from '../PriseList/PriseList';
-import './Game.scss';
+import './GamePage.scss';
 
 const variantMarkers = ['A', 'B', 'C', 'D'];
 

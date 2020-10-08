@@ -1,13 +1,17 @@
 @import '../../assets/scss/variables.scss';
 
 .start__btn {
+  width: 288px;
+  max-width: 296px;
+  max-height: 64px;
+  padding: 16px 24px;
+
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   color: $white-100;
-  padding: 16px 24px;
   border-radius: 8px;
   background-color: $orange-100;
   border: none;
