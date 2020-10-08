@@ -11,7 +11,11 @@ export const getQuestion = (data, step = 500) => {
   let wrongAnswers;
 
   if (answers.length < 3) {
-    wrongAnswers = new Array(3 - answers.length).fill(null).map((_, i) => dummyAnswers[i]).concat(answers);
+    const shuffledAnswers = shuffle(dummyAnswers);
+    wrongAnswers = new Array(3 - answers.length)
+      .fill(null)
+      .map((_, i) => shuffledAnswers[i])
+      .concat(answers);
   }
 
   if (answers.length > 3) {

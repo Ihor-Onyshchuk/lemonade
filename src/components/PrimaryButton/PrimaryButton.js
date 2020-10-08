@@ -1,13 +1,14 @@
 import React from 'react';
 import './PrimaryButton.scss';
 
-const PrimaryBtn = ({btnName, onClick}) => {
+const PrimaryBtn = ({name, onClick, className}) => {
   return (
     <button
       className="start__btn"
       onClick={onClick}
+      type="button"
     >
-    {btnName}
+    {name}
   </button>
   )
 };

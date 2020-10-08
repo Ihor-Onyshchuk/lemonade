@@ -7,8 +7,8 @@ export const data = {
       answers: [
         "Lui",
         "Bosco",
-        // "Borys",
-        // "Buddy"
+        "Borys",
+        "Buddy"
       ]
     },
   ],
