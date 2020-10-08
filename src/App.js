@@ -68,6 +68,8 @@ const App = () => {
       {mode === 'game' && (
         <>
           <Game
+            priseList={priseList}
+            step={step}
             currentQuestion={currentQuestion}
             answerState={answerState}
             onSubmit={handleAnswerSubmit}
