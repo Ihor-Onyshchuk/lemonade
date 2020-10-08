@@ -5,8 +5,6 @@ import cx from 'classnames';
 import {getQuestion} from './services';
 import {data} from './data';
 
-import './index.scss';
-
 const priseList = keys(data);
 
 const defaultAnswerState = {
