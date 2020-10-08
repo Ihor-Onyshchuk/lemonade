@@ -62,7 +62,7 @@ const App = () => {
   return (
     <>
       {mode === 'start' && (
-        <Start onClick={handleStart} btnName="Start"/>
+        <Start onClick={handleStart}/>
       )}
        {mode === 'game' && (
         <div>
