@@ -1,68 +1,133 @@
 @import '../../assets/scss/variables.scss';
 
+$sidebar-width: 376px;
+
 .game {
   position: absolute;
   width: 100%;
   height: 100%;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: $black-5;
+  display: flex;
+  flex-direction: column;
 
-  .wrapper {
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+
+  &-content {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    padding: 21px 16px 24px;
 
-    .toggle {
-      position: fixed;
-      width: 16px;
-      height: 14px;
-      top: 21px;
-      right: 16px;
-      cursor: pointer;
-      z-index: 1030;
+    @media (min-width: 1200px) {
+      flex-grow: 1;
+      padding-left: 80px;
+    }
+  }
 
-      &-bar1,
-      &-bar2,
-      &-bar3 {
-        width: 16px;
-        height: 2px;
-        background: $black-100;
-        margin-bottom: 4px;
-        transition: all .3s ease-in-out;
-      }
+  &-question {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    min-height: max-content;
+
+    @media (min-width: 1200px) {
+      justify-content: unset;
+      align-items: unset;
+      padding-left: 0;
+      padding-top: 15vh;
     }
 
-    .toggle-open {
-      transition: all .3s ease-in-out;
+    >
+    h1 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 116%;
+      text-align: center;
 
-      .toggle-bar1 {
-        transform: rotate(45deg) translate(4px, 5px);
-      }
-
-      .toggle-bar2 {
-        opacity: 0;
-      }
-
-      .toggle-bar3 {
-        transform: rotate(-45deg) translate(4px, -4px);
+      @media (min-width: 1200px) {
+        font-size: 32px;
+        text-align: left;
+        max-width: 630px;
+        margin: 0;
       }
     }
   }
 
-  .question {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 21px;
-    color: $black-100;
-    text-align: center;
-    margin-top: 115px;
+  &-buttons {
+    height: 296px;
+    padding: 24px 0;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 624px;
+      margin: 0 auto;
+      height: unset;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 846px;
+      padding: 122px 0;
+      margin-left: 0;
+    }
   }
 
-  .game-buttons {
-    margin-top: 30px;
+  .game-prises {
+    display: none;
+
+    @media (min-width: 1200px) {
+      display: block;
+      width: 22%;
+      max-width: $sidebar-width;
+      background-color: white;
+    }
+  }
+}
+
+.toggle {
+  position: fixed;
+  width: 16px;
+  height: 14px;
+  top: 21px;
+  right: 16px;
+  cursor: pointer;
+  z-index: 1030;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+
+  &-bar1,
+  &-bar2,
+  &-bar3 {
+    width: 16px;
+    height: 2px;
+    background: $black-100;
+    margin-bottom: 4px;
+    transition: all .3s ease-in-out;
+  }
+}
+
+.toggle-open {
+  transition: all .3s ease-in-out;
+
+  .toggle-bar1 {
+    transform: rotate(45deg) translate(4px, 5px);
+  }
+
+  .toggle-bar2 {
+    opacity: 0;
+  }
+
+  .toggle-bar3 {
+    transform: rotate(-45deg) translate(4px, -4px);
   }
 }

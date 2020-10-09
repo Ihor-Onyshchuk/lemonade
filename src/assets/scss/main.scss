@@ -1,4 +1,5 @@
 @import '../scss/variables.scss';
+@import '~normalize.css';
 
 *,
 *:before,
@@ -17,6 +18,21 @@ body,
 body {
   min-width: 320px;
   font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  background-color: white;
+  color: $black-100;
+}
+
+.content-title {
+  font-size: 32px;
   font-weight: 600;
-  background-color: #fcfcfc;
+  line-height: 116%;
+  text-align: center;
+  margin: 0;
+  @media (min-width: 1200px) {
+    font-size: 56px;
+    line-height: 116%;
+    text-align: left;
+  }
 }

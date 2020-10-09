@@ -1,21 +1,25 @@
 @import '../../assets/scss/variables.scss';
 
 .button {
-  width: 288px;
+  width: 100%;
+  height: 48px;
   max-width: 296px;
-  max-height: 64px;
   padding: 16px 24px;
 
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 116%;
   color: $white-100;
   border-radius: 8px;
   background-color: $orange-100;
   border: none;
+  outline: none;
   transition: linear .15s background-color;
+  @media (min-width: 1200px) {
+    height: 64px;
+    font-size: 20px;
+    line-height: 116%;
+  }
 
   &:hover {
     background-color: $orange-80;
