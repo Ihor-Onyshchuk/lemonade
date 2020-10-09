@@ -1,5 +1,6 @@
 import React from 'react';
 import {createPortal} from 'react-dom';
+import T from 'prop-types';
 
 import './Modal.scss';
 
@@ -15,5 +16,11 @@ const Modal = ({isModalOpen, children, onClick}) => {
     document.getElementById('modal-root')
   );
 };
+
+Modal.propTypes = {
+  isModalOpen: T.bool.isRequired,
+  onClick: T.func.isRequired,
+  children: T.elementType,
+}
 
 export default Modal;

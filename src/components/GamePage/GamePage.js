@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
 import cx from 'classnames'
+import T from 'prop-types';
+
 import GameButton from '../GameButton/GameButton';
 import Modal from '../Modal/Modal';
 import PriseList from '../PriseList/PriseList';
+
 import './GamePage.scss';
 
 const variantMarkers = ['A', 'B', 'C', 'D'];
 
-const Game = ({currentQuestion, answerState, priseList, step, onSubmit}) => {
+const GamePage = ({currentQuestion, answerState, priseList, step, onSubmit}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -42,4 +45,12 @@ const Game = ({currentQuestion, answerState, priseList, step, onSubmit}) => {
   )
 }
 
-export default Game;
+GamePage.propTypes = {
+  currentQuestion: T.object.isRequired,
+  answerState: T.object.isRequired,
+  priseList: T.array.isRequired,
+  step: T.number.isRequired,
+  onSubmit: T.func.isRequired
+}
+
+export default GamePage;

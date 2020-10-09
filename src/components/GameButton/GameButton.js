@@ -1,5 +1,7 @@
 import React from 'react';
+
 import cx from 'classnames';
+import T from 'prop-types';
 
 import './GameButton.scss';
 
@@ -17,6 +19,13 @@ const GameButton = ({answerState, answer, onSubmit, variantMarker}) => {
       <span className="game__button__text">{answer}</span>
     </div >
   )
+}
+
+GameButton.propTypes = {
+  answerState: T.object.isRequired,
+  answer: T.string.isRequired,
+  onSubmit: T.func.isRequired,
+  variantMarker: T.string,
 }
 
 export default GameButton;

@@ -1,5 +1,7 @@
 import React from 'react'
 import cx from 'classnames';
+import T from 'prop-types';
+
 import {numberWithDelimiter} from '../../utils';
 
 import './PriseList.scss';
@@ -20,6 +22,11 @@ const PriseList = ({priseList, step}) => {
       ))}
     </div>
   )
+}
+
+PriseList.propTypes = {
+  priseList: T.array.isRequired,
+  step: T.number.isRequired,
 }
 
 export default PriseList;

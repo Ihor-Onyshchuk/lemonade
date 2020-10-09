@@ -1,8 +1,10 @@
 import React from 'react';
-import {numberWithDelimiter} from '../../utils';
+import T from 'prop-types';
 
-import lucas from '../../assets/images/lucas.svg';
 import Button from '../Button/Button';
+import {numberWithDelimiter} from '../../utils';
+import lucas from '../../assets/images/lucas.svg';
+
 import './SalutePage.scss';
 
 const SalutePage = ({mode, score, onStart}) => {
@@ -30,6 +32,12 @@ const SalutePage = ({mode, score, onStart}) => {
       </div>
     </div>
   )
+};
+
+SalutePage.propTypes = {
+  mode: T.string.isRequired,
+  score: T.number.isRequired,
+  onStart: T.func.isRequired,
 }
 
 export default SalutePage;

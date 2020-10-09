@@ -1,4 +1,6 @@
 import React from 'react';
+import T from 'prop-types';
+
 import './Button.scss';
 
 const Button = ({name, onClick, className = 'start__btn'}) => {
@@ -12,5 +14,11 @@ const Button = ({name, onClick, className = 'start__btn'}) => {
   </button>
   )
 };
+
+Button.propTypes = {
+  name: T.string.isRequired,
+  onClick: T.func.isRequired,
+  className: T.string,
+}
 
 export default Button;
