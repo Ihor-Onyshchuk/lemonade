@@ -8,8 +8,8 @@ const Modal = ({isModalOpen, children, onClick}) => {
   const handleModalClose = () => onClick(!isModalOpen);
   return createPortal(
     <div className="modal">
-        <div className="modal__backdrop" onClick={handleModalClose} />
-        <div className="modal__content">
+        <div className="modal-backdrop" onClick={handleModalClose} />
+        <div className="modal-content">
           {children}
         </div>
       </div>,

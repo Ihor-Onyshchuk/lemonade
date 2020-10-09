@@ -3,7 +3,7 @@ import T from 'prop-types';
 
 import './Button.scss';
 
-const Button = ({name, onClick, className = 'start__btn'}) => {
+const Button = ({name, onClick, className = 'button'}) => {
   return (
     <button
       className={className}

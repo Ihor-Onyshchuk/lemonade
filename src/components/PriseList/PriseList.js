@@ -8,13 +8,13 @@ import './PriseList.scss';
 
 const PriseList = ({priseList, step}) => {
   return (
-    <div className="prise__list">
+    <div className="prise-list">
       {priseList.map((prise, i) => (
         <div
           key={prise} 
-          className={cx("prise__button", {
-            prise__button_earned: i < step,
-            prise__button_active: i === step
+          className={cx("prise-button", {
+            'prise-button-earned': i < step,
+            'prise-button-active': i === step
           })}
         >
           &#36;{numberWithDelimiter(prise)}

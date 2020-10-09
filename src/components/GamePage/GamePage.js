@@ -16,14 +16,14 @@ const GamePage = ({currentQuestion, answerState, priseList, step, onSubmit}) => 
   return (
     <>
       <div className="game">
-        <div className="game__wrapper">
-          <div className={cx("game__toggle", {game__toggle_open: isModalOpen})} onClick={() => setIsModalOpen(!isModalOpen)}>
-            <div className="game__toggle__bar1"></div>
-            <div className="game__toggle__bar2"></div>
-            <div className="game__toggle__bar3"></div>
+        <div className="wrapper">
+          <div className={cx("toggle", {'toggle-open': isModalOpen})} onClick={() => setIsModalOpen(!isModalOpen)}>
+            <div className="toggle-bar1"/>
+            <div className="toggle-bar2"/>
+            <div className="toggle-bar3"/>
           </div>
-          <h1 className="game__question">{currentQuestion.question}</h1>
-          <div className="game__buttons">
+          <h1 className="question">{currentQuestion.question}</h1>
+          <div className="game-buttons">
             {currentQuestion.answers.map((answer, i) => (
               <GameButton 
                 key={i}

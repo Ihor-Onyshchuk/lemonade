@@ -7,66 +7,54 @@
   line-height: 16px;
 }
 
-.game__button {
+.game-button {
   position: relative;
   width: 288px;
   height: 56px;
   padding: 20px 24px;
-  margin-top: 20px;
-
   border: 1px solid $black-40;
   transition: linear .15s border-color;
   cursor: pointer;
 
-  &:hover {
-    border-color: $orange-100;
+  &:not(:first-child) {
+    margin-top: 8px;
   }
 
-  &.selected {
-    background-color: $orange-5;
-    border: 1px solid $orange-100;
-  }
-
-  &.correct {
-    background-color: $green-5;
-    border: 1px solid $green-100;
-  }
-
-  &.wrong {
-    background-color: $red-5;
-    border: 1px solid $red-100;
-  }
-
-  &__text {
-    @extend %text-shared;
-    font-weight: normal;
-    color: $black-100;
-    margin-left: 8px;
-  }
-
-  &__variant {
+  .variant {
     @extend %text-shared;
     font-weight: 600;
     color: $orange-100;
     margin-left: 24px;
   }
 
-  &__figure {
-    position: absolute;
-    top: 7px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid $black-40;
+  .text {
+    @extend %text-shared;
+    font-weight: normal;
+    color: $black-100;
+    margin-left: 8px;
   }
 
-  .game__button__figure_left {
-    left: 7px;
-    transform: rotate(45deg);
-    border-radius: 10px;
+  &:hover {
+    border-color: $orange-100;
+  }
+}
+
+.game-button {
+  & +
+  .selected {
+    background-color: $orange-5;
+    border-color: $orange-100;
   }
 
-  .game__button__figure_right {
-    right: 7px;
-    transform: rotate(45deg);
+  & +
+  .correct {
+    background-color: $green-5;
+    border-color: $green-100;
+  }
+
+  & +
+  .wrong {
+    background-color: $red-5;
+    border-color: $red-100;
   }
 }

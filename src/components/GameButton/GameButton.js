@@ -8,15 +8,15 @@ import './GameButton.scss';
 const GameButton = ({answerState, answer, onSubmit, variantMarker}) => {
   return (
     <div
-      className={cx('game__button', answerState.answer === answer && {
+      className={cx('game-button', answerState.answer === answer && {
         selected: answerState.selected,
         correct: answerState.correct,
         wrong: answerState.wrong,
       })}
       onClick={() => onSubmit(answer)}
     >
-      <span className="game__button__variant">{variantMarker}</span>
-      <span className="game__button__text">{answer}</span>
+      <span className="variant">{variantMarker}</span>
+      <span className="text">{answer}</span>
     </div >
   )
 }

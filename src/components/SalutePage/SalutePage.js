@@ -13,20 +13,20 @@ const SalutePage = ({mode, score, onStart}) => {
   
   return (
     <div className="start">
-      {!isEnd && <div className="start__bg"/>}
-      <div className="start__content">
-        <div className="start__logo">
+      {!isEnd && <div className="bg"/>}
+      <div className="content">
+        <div className="logo">
           <img src={lucas} alt="lucas"/>
         </div>
-        <div className="start__wrapper">
-          {isEnd && <div className="start__suptitle">Total score:</div>}
-          <h1 className="start__title">
+        <div className="wrapper">
+          {isEnd && <div className="suptitle">Total score:</div>}
+          <h1 className="title">
             {isEnd ? <span>&#36;{numberWithDelimiter(score)} earned</span> : <span>Who wants to be a millionaire?</span>}
           </h1>
           <Button
             name={buttonName} 
             onClick={onStart}
-            className="start__btn"
+            className="button"
           />
         </div>
       </div>
@@ -36,7 +36,7 @@ const SalutePage = ({mode, score, onStart}) => {
 
 SalutePage.propTypes = {
   mode: T.string.isRequired,
-  score: T.number.isRequired,
+  score: T.string.isRequired,
   onStart: T.func.isRequired,
 }
 

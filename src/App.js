@@ -20,7 +20,7 @@ const defaultAnswerState = {
 const drumroll = () => new Promise((resolve) => {
   setTimeout(() => {
     resolve();
-  }, 100);
+  }, 500);
 })
 
 const App = () => {
@@ -70,7 +70,7 @@ const App = () => {
       {saluteModes.includes(mode) && (
         <SalutePage
           mode={mode}
-          score={!step ? 0 : priseList[step - 1]}
+          score={!step ? '0' : priseList[step - 1]}
           onStart={handleStart}
         />
       )}
