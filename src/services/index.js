@@ -9,7 +9,7 @@ export const getQuestion = (data, step = 500) => {
   const correctAnswer = shuffle(corrects)[0];
 
   let wrongAnswers;
-
+  
   if (answers.length < 3) {
     const shuffledAnswers = shuffle(dummyAnswers);
     wrongAnswers = new Array(3 - answers.length)
@@ -18,7 +18,7 @@ export const getQuestion = (data, step = 500) => {
       .concat(answers);
   }
 
-  if (answers.length > 3) {
+  if (answers.length >= 3) {
     wrongAnswers = take(shuffle(answers), 3);
   }
 

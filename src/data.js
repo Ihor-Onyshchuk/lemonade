@@ -2,157 +2,316 @@ export const data = {
   500: [
     {
       id: 1,
-      question: "Choose the right name of Asterix And Obelix's dog?",
-      corrects: ["Dogmatix"],
+      question: "Who wasn't a member of the Beatles?",
+      corrects: ["Justin Timberlake"],
       answers: [
-        "Lui",
-        "Bosco",
-        "Borys",
-        "Buddy"
+        "John Lennon",
+        "Paul McCartney",
+        "Ringo Star",
+      ]
+    },
+    {
+      id: 1,
+      question: "Which website is the most popular search engine?",
+      corrects: ["Google"],
+      answers: [
+        "DuckDuckGo",
+        "Myspace",
+        "Bing",
+      ]
+    },
+    {
+      id: 1,
+      question: "What is the smallest unit of American currency?",
+      corrects: ["Penny"],
+      answers: [
+        "Dime",
+        "Quarter",
+        "Dollar",
       ]
     },
   ],
   1000: [
     {
       id: 2,
-      question: "how old are 20 years guy?",
-      corrects: ["20"],
+      question: "In which sport do two teams pull at the opposite ends of a rope?",
+      corrects: ["Tug of war"],
       answers: [
-        "12",
-        "34",
-        "80",
-        "78"
+        "Basketball",
+        "Ice hockey",
+        "Polo",
       ]
     },
+    {
+      id: 2,
+      question: "What is the first word in the phonetic alphabet?",
+      corrects: ["Alpha"],
+      answers: [
+        "Apple",
+        "Armadillo",
+        "Amazon",
+      ]
+    },
+    {
+      id: 2,
+      question: "In the novel 'The Lord of The Ring', Frodo, Sam and Bilbo come from which region of Middle Earth?",
+      corrects: ["The Shire"],
+      answers: [
+        "The Green",
+        "The Borough",
+        "The City",
+      ]
+    },
+    
   ],
   2000: [
     {
       id: 3,
-      question: "2^5",
-      corrects: ["32"],
+      question: "Where does a cowboy wear chaps?",
+      corrects: ["On his legs"],
       answers: [
-        "23",
-        "33",
-        "34",
-        "54"
+        "On his head",
+        "On his arms",
+        "On his hands",
+      ]
+    },
+    {
+      id: 3,
+      question: "Which of these means a speech in a play where a character talks to themselves rather than to other characters?",
+      corrects: ["Soliloquy"],
+      answers: [
+        "Interlude",
+        "Revue",
+        "Chorus", 
+      ]
+    },
+    {
+      id: 3,
+      question: "In the 'Transformers' film franchise, who is the leader of the Decepticons?",
+      corrects: ["Megatron"],
+      answers: [
+        "Megaphone",
+        "Megabyte",
+        "Megabus",
       ]
     },
   ],
-  // 4000: [
-  //   {
-  //     id: 4,
-  //     question: "question",
-  //     corrects: ["sfsdfsad"],
-  //     answers: [
-  //       "sfsdfsad",
-  //       "afasdfasd",
-  //       "sdfasd",
-  //       "asdfasf"
-  //     ]
-  //   },
-  // ],
-  // 8000: [
-  //   {
-  //     id: 5,
-  //     question: "question",
-  //     corrects: ["sfsdfsad"],
-  //     answers: [
-  //       "sfsdfsad",
-  //       "afasdfasd",
-  //       "sdfasd",
-  //       "asdfasf"
-  //     ]
-  //   },
-  // ],
-  // 16000: [
-  //   {
-  //     id: 6,
-  //     question: "question",
-  //     corrects: ["sfsdfsad"],
-  //     answers: [
-  //       "sfsdfsad",
-  //       "afasdfasd",
-  //       "sdfasd",
-  //       "asdfasf"
-  //     ]
-  //   },
-  // ],
-  // 32000: [
-  //   {
-  //     id: 7,
-  //     question: "question",
-  //     corrects: ["sfsdfsad"],
-  //     answers: [
-  //       "sfsdfsad",
-  //       "afasdfasd",
-  //       "sdfasd",
-  //       "asdfasf"
-  //     ]
-  //   },
-  // ],
-  // 64000: [
-  //   {
-  //     id: 8,
-  //     question: "question",
-  //     corrects: ["sfsdfsad"],
-  //     answers: [
-  //       "sfsdfsad",
-  //       "afasdfasd",
-  //       "sdfasd",
-  //       "asdfasf"
-  //     ]
-  //   },
-  // ],
-  // 125000: [
-  //   {
-  //     id: 9,
-  //     question: "question",
-  //     corrects: ["sfsdfsad"],
-  //     answers: [
-  //       "sfsdfsad",
-  //       "afasdfasd",
-  //       "sdfasd",
-  //       "asdfasf"
-  //     ]
-  //   },
-  // ],
-  // 250000: [
-  //   {
-  //     id: 10,
-  //     question: "question",
-  //     corrects: ["sfsdfsad"],
-  //     answers: [
-  //       "sfsdfsad",
-  //       "afasdfasd",
-  //       "sdfasd",
-  //       "asdfasf"
-  //     ]
-  //   },
-  // ],
-  // 500000: [
-  //   {
-  //     id: 11,
-  //     question: "question",
-  //     corrects: ["sfsdfsad"],
-  //     answers: [
-  //       "sfsdfsad",
-  //       "afasdfasd",
-  //       "sdfasd",
-  //       "asdfasf"
-  //     ]
-  //   },
-  // ],
-  // 1000000: [
-  //   {
-  //     id: 12,
-  //     question: "question",
-  //     corrects: ["sfsdfsad"],
-  //     answers: [
-  //       "sfsdfsad",
-  //       "afasdfasd",
-  //       "sdfasd",
-  //       "asdfasf"
-  //     ]
-  //   },
-  // ],
+  4000: [
+    {
+      id: 4,
+      question: "Which of these zodiac signs is not represented by an animal with horns?",
+      corrects: ["Aquarius"],
+      answers: [
+        "Taurus",
+        "Capricorn",
+        "Aries",
+      ]
+    },
+    {
+      id: 4,
+      question: "Which is a Mexican stuffed, fried pancake?",
+      corrects: ["Taco"],
+      answers: [
+        "Waco",
+        "Saki",
+        "Pesto"
+      ]
+    },
+  ],
+  8000: [
+    {
+      id: 5,
+      question: "Sherpas and Gurkhas are native to which country?",
+      corrects: ["Nepal"],
+      answers: [
+        "Morocco",
+        "Ecuador",
+        "Russia",
+      ]
+    },
+    {
+      id: 5,
+      question: "Which of these words means confused language or technical terminology?",
+      corrects: ["Jargon"],
+      answers: [
+        "Jardin",
+        "Jarhead",
+        "Jamjar",
+      ]
+    },
+  ],
+  16000: [
+    {
+      id: 6,
+      question: "'Escape' or 'Die Frying' is a tagline for which film?",
+      corrects: ["Chicken Run"],
+      answers: [
+        "Ratatouille",
+        "Free Willy",
+        "Babe",
+      ]
+    },
+    {
+      id: 6,
+      question: "Which of these is a 2003 Disney computer-animated film?",
+      corrects: ["Locating Remo"],
+      answers: [
+        "Discovering Lemo",
+        "Unearthing Zemo",
+        "Finding Nemo",
+      ]
+    },
+  ],
+  32000: [
+    {
+      id: 7,
+      question: "What is the name of the world’s highest active volcano?",
+      corrects: ["Cotopaxi"],
+      answers: [
+        "St Helens",
+        "Etna",
+        "Krakatoa",
+      ]
+    },
+    {
+      id: 7,
+      question: "According to the Highway Code, what shape is the standard sign giving the order to 'Stop'?",
+      corrects: ["Octagon"],
+      answers: [
+        "Pentagon",
+        "Hexagon",
+        "Heptagon",
+      ]
+    },
+  ],
+  64000: [
+    {
+      id: 8,
+      question: "Which of these books is believed to have been inspired by the real-life experiences of the Scottish sailor Alexander Selkirk?",
+      corrects: ["Robinson Crusoe"],
+      answers: [
+        "Moby Dick",
+        "The Count of Monte Cristo",
+        "Treasure Island",
+      ]
+    },
+    {
+      id: 8,
+      question: "What was the nickname of Dr Leonard McCoy in the original series of 'Star Trek'?",
+      corrects: ["Bones"],
+      answers: [
+        "Jaws",
+        "Head",
+        "Gums",
+      ]
+    },
+    {
+      id: 8,
+      question: "Who was Brad Pitt's partner in the 1995 film 'Se7en'?",
+      corrects: ["Morgan Freeman"],
+      answers: [
+        "Keanu Reeves",
+        "Bruce Willis",
+        "Matt Damon",
+      ]
+    },
+  ],
+  125000: [
+    {
+      id: 9,
+      question: "The 2002 Booker Prize winner was Yan Martel's 'Life of ...'",
+      corrects: ["Pi"],
+      answers: [
+        "Po",
+        "Pee",
+        "Pum",
+      ]
+    },
+    {
+      id: 9,
+      question: "Who gave their name to a continent?",
+      corrects: ["Amerigo Vespucci"],
+      answers: [
+        "Europa Bellini",
+        "Africo Tintorini",
+        "Asio Canelli",
+      ]
+    },
+  ],
+  250000: [
+    {
+      id: 10,
+      question: "The young of which creature is known as a squab?",
+      corrects: ["Pigeon"],
+      answers: [
+        "Salmon",
+        "Horse",
+        "Octopus",
+      ]
+    },
+    {
+      id: 10,
+      question: "Which is a South American capital city?",
+      corrects: ["Cayenne"],
+      answers: [
+        "Paprika",
+        "Mustard",
+        "Saffron",
+      ]
+    },
+  ],
+  500000: [
+    {
+      id: 11,
+      question: "An insect’s hard outer skeleton is made mainly of what substance?",
+      corrects: ["Chitin"],
+      answers: [
+        "Keratin",
+        "Glycogen",
+        "Lignin",
+      ]
+    },
+    {
+      id: 11,
+      question: "Which 2002 Tom Hanks film had the tagline, 'Every father is a hero to his son'?",
+      corrects: ["Road to Perdition"],
+      answers: [
+        "Road to Zanzibar",
+        "Road to Glory",
+        "Road to Morocco",
+      ]
+    },
+  ],
+  1000000: [
+    {
+      id: 12,
+      question: "In 1718, which pirate died in battle off the coast of what is now North Carolina?",
+      corrects: ["Blackbeard"],
+      answers: [
+        "Captain Kidd",
+        "Calico Jack",
+        "Bartholomew Roberts",
+      ]
+    },
+    {
+      id: 12,
+      question: "Which scientific unit is named after an Italian nobleman?",
+      corrects: ["Volt"],
+      answers: [
+        "Ohm",
+        "Hertz",
+        "Pascal",
+      ]
+    },
+    {
+      id: 12,
+      question: "Who was the first man to travel into space twice?",
+      corrects: ["Gus Grissom"],
+      answers: [
+        "Vladimir Titov",
+        "Michael Collins",
+        "Yuri Gagarin",
+      ]
+    },
+  ],
 } 

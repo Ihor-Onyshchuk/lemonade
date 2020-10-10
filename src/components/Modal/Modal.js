@@ -20,7 +20,7 @@ const Modal = ({isModalOpen, children, onClick}) => {
 Modal.propTypes = {
   isModalOpen: T.bool.isRequired,
   onClick: T.func.isRequired,
-  children: T.elementType,
+  children: T.element,
 }
 
 export default Modal;
