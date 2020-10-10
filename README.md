@@ -1,6 +1,5 @@
 # Lemondae
-Welcome to 
-### Lemonade!
+Welcome to ### Lemonade!
 
 This App based on the game 
 ### 'Who Wants to Be a Millionaire?'.
