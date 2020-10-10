@@ -7,6 +7,8 @@ This App based on the game 'Who Wants to Be a Millionaire?'.
 
 'Who Wants to Be a Millionaire?' is an international television game show franchise of British origin.
 
+You can try play game clicking on demo link or clone for developing or testing purposes
+
 ## Getting started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
