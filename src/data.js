@@ -1,7 +1,6 @@
 export const data = {
   500: [
     {
-      id: 1,
       question: "Who wasn't a member of the Beatles?",
       corrects: ["Justin Timberlake"],
       answers: [
@@ -11,7 +10,6 @@ export const data = {
       ]
     },
     {
-      id: 1,
       question: "Which website is the most popular search engine?",
       corrects: ["Google"],
       answers: [
@@ -21,7 +19,6 @@ export const data = {
       ]
     },
     {
-      id: 1,
       question: "What is the smallest unit of American currency?",
       corrects: ["Penny"],
       answers: [
@@ -33,7 +30,6 @@ export const data = {
   ],
   1000: [
     {
-      id: 2,
       question: "In which sport do two teams pull at the opposite ends of a rope?",
       corrects: ["Tug of war"],
       answers: [
@@ -43,7 +39,6 @@ export const data = {
       ]
     },
     {
-      id: 2,
       question: "What is the first word in the phonetic alphabet?",
       corrects: ["Alpha"],
       answers: [
@@ -53,7 +48,6 @@ export const data = {
       ]
     },
     {
-      id: 2,
       question: "In the novel 'The Lord of The Ring', Frodo, Sam and Bilbo come from which region of Middle Earth?",
       corrects: ["The Shire"],
       answers: [
@@ -66,7 +60,6 @@ export const data = {
   ],
   2000: [
     {
-      id: 3,
       question: "Where does a cowboy wear chaps?",
       corrects: ["On his legs"],
       answers: [
@@ -76,7 +69,6 @@ export const data = {
       ]
     },
     {
-      id: 3,
       question: "Which of these means a speech in a play where a character talks to themselves rather than to other characters?",
       corrects: ["Soliloquy"],
       answers: [
@@ -86,7 +78,6 @@ export const data = {
       ]
     },
     {
-      id: 3,
       question: "In the 'Transformers' film franchise, who is the leader of the Decepticons?",
       corrects: ["Megatron"],
       answers: [
@@ -98,7 +89,6 @@ export const data = {
   ],
   4000: [
     {
-      id: 4,
       question: "Which of these zodiac signs is not represented by an animal with horns?",
       corrects: ["Aquarius"],
       answers: [
@@ -108,7 +98,6 @@ export const data = {
       ]
     },
     {
-      id: 4,
       question: "Which is a Mexican stuffed, fried pancake?",
       corrects: ["Taco"],
       answers: [
@@ -120,7 +109,6 @@ export const data = {
   ],
   8000: [
     {
-      id: 5,
       question: "Sherpas and Gurkhas are native to which country?",
       corrects: ["Nepal"],
       answers: [
@@ -130,7 +118,6 @@ export const data = {
       ]
     },
     {
-      id: 5,
       question: "Which of these words means confused language or technical terminology?",
       corrects: ["Jargon"],
       answers: [
@@ -142,7 +129,6 @@ export const data = {
   ],
   16000: [
     {
-      id: 6,
       question: "'Escape' or 'Die Frying' is a tagline for which film?",
       corrects: ["Chicken Run"],
       answers: [
@@ -152,7 +138,6 @@ export const data = {
       ]
     },
     {
-      id: 6,
       question: "Which of these is a 2003 Disney computer-animated film?",
       corrects: ["Locating Remo"],
       answers: [
@@ -164,7 +149,6 @@ export const data = {
   ],
   32000: [
     {
-      id: 7,
       question: "What is the name of the world’s highest active volcano?",
       corrects: ["Cotopaxi"],
       answers: [
@@ -174,7 +158,6 @@ export const data = {
       ]
     },
     {
-      id: 7,
       question: "According to the Highway Code, what shape is the standard sign giving the order to 'Stop'?",
       corrects: ["Octagon"],
       answers: [
@@ -186,7 +169,6 @@ export const data = {
   ],
   64000: [
     {
-      id: 8,
       question: "Which of these books is believed to have been inspired by the real-life experiences of the Scottish sailor Alexander Selkirk?",
       corrects: ["Robinson Crusoe"],
       answers: [
@@ -196,7 +178,6 @@ export const data = {
       ]
     },
     {
-      id: 8,
       question: "What was the nickname of Dr Leonard McCoy in the original series of 'Star Trek'?",
       corrects: ["Bones"],
       answers: [
@@ -206,7 +187,6 @@ export const data = {
       ]
     },
     {
-      id: 8,
       question: "Who was Brad Pitt's partner in the 1995 film 'Se7en'?",
       corrects: ["Morgan Freeman"],
       answers: [
@@ -218,7 +198,6 @@ export const data = {
   ],
   125000: [
     {
-      id: 9,
       question: "The 2002 Booker Prize winner was Yan Martel's 'Life of ...'",
       corrects: ["Pi"],
       answers: [
@@ -228,7 +207,6 @@ export const data = {
       ]
     },
     {
-      id: 9,
       question: "Who gave their name to a continent?",
       corrects: ["Amerigo Vespucci"],
       answers: [
@@ -240,7 +218,6 @@ export const data = {
   ],
   250000: [
     {
-      id: 10,
       question: "The young of which creature is known as a squab?",
       corrects: ["Pigeon"],
       answers: [
@@ -250,7 +227,6 @@ export const data = {
       ]
     },
     {
-      id: 10,
       question: "Which is a South American capital city?",
       corrects: ["Cayenne"],
       answers: [
@@ -262,7 +238,6 @@ export const data = {
   ],
   500000: [
     {
-      id: 11,
       question: "An insect’s hard outer skeleton is made mainly of what substance?",
       corrects: ["Chitin"],
       answers: [
@@ -272,7 +247,6 @@ export const data = {
       ]
     },
     {
-      id: 11,
       question: "Which 2002 Tom Hanks film had the tagline, 'Every father is a hero to his son'?",
       corrects: ["Road to Perdition"],
       answers: [
@@ -284,7 +258,6 @@ export const data = {
   ],
   1000000: [
     {
-      id: 12,
       question: "In 1718, which pirate died in battle off the coast of what is now North Carolina?",
       corrects: ["Blackbeard"],
       answers: [
@@ -294,7 +267,6 @@ export const data = {
       ]
     },
     {
-      id: 12,
       question: "Which scientific unit is named after an Italian nobleman?",
       corrects: ["Volt"],
       answers: [
@@ -304,7 +276,6 @@ export const data = {
       ]
     },
     {
-      id: 12,
       question: "Who was the first man to travel into space twice?",
       corrects: ["Gus Grissom"],
       answers: [

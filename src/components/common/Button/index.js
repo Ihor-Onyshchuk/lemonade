@@ -1,24 +1,29 @@
 import React from 'react';
 import T from 'prop-types';
+import cx from 'classnames';
 
 import './Button.scss';
 
-const Button = ({name, onClick, className = 'button'}) => {
+const Button = ({name, onClick, className}) => {
   return (
     <button
-      className={className}
-      onClick={onClick}
       type="button"
+      onClick={onClick}
+      className={cx('btn', className)}
     >
-    {name}
-  </button>
-  )
+      {name}
+    </button>
+  );
 };
 
 Button.propTypes = {
   name: T.string.isRequired,
   onClick: T.func.isRequired,
   className: T.string,
-}
+};
+
+Button.defaultProps = {
+  className: 'primary-btn',
+};
 
 export default Button;

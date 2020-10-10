@@ -1,0 +1,101 @@
+@import '../../../assets/scss/variables.scss';
+
+.prise-list {
+  height: 100%;
+  padding: 64px 0 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  overflow-x: hidden;
+  @media (min-width: 1200px) {
+    padding: 64px 0;
+    justify-content: center;
+  }
+
+  &-item {
+    position: relative;
+    width: 240px;
+    height: 32px;
+    padding: 8px 24px;
+    font-size: 14px;
+    line-height: 116%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 1200px) {
+      font-size: 20px;
+      height: 40px;
+    }
+    &:not(:first-child) {
+      margin-bottom: 8px;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      height: 1px;
+      width: 50%;
+    }
+    &::before {
+      left: 0;
+      transform: translate(-100%, -50%);
+    }
+    &::after {
+      right: 0;
+      transform: translate(100%, -50%);
+    }
+
+    svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      &.svg-cell-mobile {
+        @media (min-width: 1200px) {
+          display: none;
+        }
+      }
+      &.svg-cell {
+        display: none;
+        @media (min-width: 1200px) {
+          display: block;
+        }
+      }
+      path {
+        fill: $white;
+        stroke: $black-40;
+      }
+    }
+
+    span {
+      position: relative;
+      z-index: 2;
+    }
+
+    &::before,
+    &::after {
+      background-color: $black-40;
+    }
+
+    &.active {
+      color: $orange-100;
+      svg path {
+        fill: $orange-5;
+        stroke: $orange-100;
+      }
+      &::before,
+      &::after {
+        background-color: $orange-100;
+      }
+    }
+
+    &.earned {
+      color: $black-40;
+    }
+  }
+}

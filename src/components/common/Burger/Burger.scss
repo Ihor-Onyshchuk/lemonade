@@ -1,0 +1,41 @@
+@import '../../../assets/scss/variables.scss';
+
+.toggle {
+  position: fixed;
+  width: 16px;
+  height: 14px;
+  top: 21px;
+  right: 16px;
+  cursor: pointer;
+  z-index: 1030;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+
+  &-bar1,
+  &-bar2,
+  &-bar3 {
+    width: 16px;
+    height: 2px;
+    background: $black-100;
+    margin-bottom: 4px;
+    transition: all .3s ease-in-out;
+  }
+}
+
+.toggle-open {
+  transition: all .3s ease-in-out;
+
+  .toggle-bar1 {
+    transform: rotate(45deg) translate(4px, 5px);
+  }
+
+  .toggle-bar2 {
+    opacity: 0;
+  }
+
+  .toggle-bar3 {
+    transform: rotate(-45deg) translate(4px, -4px);
+  }
+}

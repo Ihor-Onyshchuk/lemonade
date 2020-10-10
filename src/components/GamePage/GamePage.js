@@ -1,61 +1,58 @@
 import React, { useState } from 'react'
-import cx from 'classnames'
 import T from 'prop-types';
 
-import GameButton from '../GameButton/GameButton';
-import Modal from '../Modal/Modal';
-import PriseList from '../PriseList/PriseList';
+import Modal from '../common/Modal';
+import Burger from '../common/Burger';
+import PriseList from './PriseList';
+import AnswerList from './AnswerList';
 
 import './GamePage.scss';
 
-const variantMarkers = ['A', 'B', 'C', 'D'];
-
-const GamePage = ({currentQuestion, answerState, priseList, step, onSubmit}) => {
+const GamePage = ({
+  currentQuestion, answerState, priseList, step, onSubmit
+}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const renderedPriseList = <PriseList priseList={priseList} step={step} />;
 
   return (
     <>
       <div className="game">
-        <div className={cx("toggle", {'toggle-open': isModalOpen})} onClick={() => setIsModalOpen(!isModalOpen)}>
-          <div className="toggle-bar1"/>
-          <div className="toggle-bar2"/>
-          <div className="toggle-bar3"/>
-        </div>
+        <Burger open={isModalOpen} onClick={setIsModalOpen} />
+
         <div className="game-content">
           <div className="game-question">
             <h1>{currentQuestion.question}</h1>
           </div>
-          <div className="game-buttons">
-            {currentQuestion.answers.map((answer, i) => (
-              <GameButton 
-                key={i}
-                answer={answer} 
-                answerState={answerState} 
-                onSubmit={onSubmit}
-                variantMarker={variantMarkers[i]}
-              />
-            ))}
-          </div>
+
+          <AnswerList
+            onSubmit={onSubmit}
+            answerState={answerState}
+            answers={currentQuestion.answers}
+          />
         </div>
+
         <div className="game-prises">
-          <PriseList priseList={priseList} step={step} />
+          {renderedPriseList}
         </div>
       </div>
+
       {isModalOpen && (
-        <Modal isModalOpen={isModalOpen} onClick={setIsModalOpen}>
-          <PriseList priseList={priseList} step={step} />
-        </Modal>
+        <Modal
+          isOpen={isModalOpen}
+          onClick={setIsModalOpen}
+          content={renderedPriseList}
+        />
       )}
     </>
-  )
-}
+  );
+};
 
 GamePage.propTypes = {
   currentQuestion: T.object.isRequired,
   answerState: T.object.isRequired,
   priseList: T.array.isRequired,
   step: T.number.isRequired,
-  onSubmit: T.func.isRequired
+  onSubmit: T.func.isRequired,
 }
 
 export default GamePage;

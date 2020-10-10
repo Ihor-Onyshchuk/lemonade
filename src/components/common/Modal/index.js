@@ -4,23 +4,22 @@ import T from 'prop-types';
 
 import './Modal.scss';
 
-const Modal = ({isModalOpen, children, onClick}) => {
-  const handleModalClose = () => onClick(!isModalOpen);
-  return createPortal(
+const Modal = ({isOpen, content, onClick}) => (
+  createPortal(
     <div className="modal">
-        <div className="modal-backdrop" onClick={handleModalClose} />
+        <div className="modal-backdrop" onClick={() => onClick(!isOpen)} />
         <div className="modal-content">
-          {children}
+          {content}
         </div>
       </div>,
     document.getElementById('modal-root')
-  );
-};
+  )
+);
 
 Modal.propTypes = {
-  isModalOpen: T.bool.isRequired,
+  isOpen: T.bool.isRequired,
   onClick: T.func.isRequired,
-  children: T.element,
-}
+  content: T.element,
+};
 
 export default Modal;

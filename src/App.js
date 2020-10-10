@@ -5,6 +5,7 @@ import SalutePage from './components/SalutePage/SalutePage';
 import GamePage from './components/GamePage/GamePage';
 
 import {getQuestion} from './services';
+import {drumroll} from './utils'
 import {data} from './data';
 
 const priseList = keys(data);
@@ -17,29 +18,23 @@ const defaultAnswerState = {
   selected: false,
 };
 
-const drumroll = () => new Promise((resolve) => {
-  setTimeout(() => {
-    resolve();
-  }, 500);
-})
-
 const App = () => {
   const [currentQuestion, setCurrentQuestion] = useState({});
-  const [step, setStep] = useState(0);
-  const [mode, setMode] = useState('start');
   const [answerState, setAnswerState] = useState(defaultAnswerState);
+  const [mode, setMode] = useState('start');
+  const [step, setStep] = useState(0);
 
   useEffect(() => {
     if (step < priseList.length) {
-      const question = getQuestion(data, priseList[step])
+      const question = getQuestion(data, priseList[step]);
       setCurrentQuestion(question);
     }
   }, [step]);
 
   const handleStart = () => {
     setMode('game');
-    setStep(0)
-  }
+    setStep(0);
+  };
 
   const handleAnswerSubmit = (answer) => {
     setAnswerState({ ...answerState, answer, selected: true});
@@ -62,29 +57,31 @@ const App = () => {
           setMode('end');
         })
       }
-    })
-  }
+    });
+  };
+
+  const totalScore = !step ? '0' : priseList[step - 1];
 
   return (
     <>
       {saluteModes.includes(mode) && (
         <SalutePage
           mode={mode}
-          score={!step ? '0' : priseList[step - 1]}
+          score={totalScore}
           onStart={handleStart}
         />
       )}
       {mode === 'game' && (
         <GamePage
-          priseList={priseList}
           step={step}
-          currentQuestion={currentQuestion}
+          priseList={priseList}
           answerState={answerState}
+          currentQuestion={currentQuestion}
           onSubmit={handleAnswerSubmit}
         />
       )}
     </>
   );
-}
+};
 
 export default App;
