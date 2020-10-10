@@ -1,0 +1,47 @@
+@import '../scss/variables.scss';
+@import '~normalize.css';
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 500px;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  background-color: $white;
+  color: $black-100;
+}
+
+.content-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 116%;
+  text-align: center;
+  margin: 0;
+  @media (min-width: 1200px) {
+    font-size: 56px;
+    text-align: left;
+  }
+}
+
+.content-suptitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 116%;
+  @media (min-width: 1200px) {
+    font-size: 32px;
+  }
+}

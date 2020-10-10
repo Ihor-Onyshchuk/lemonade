@@ -1,0 +1,34 @@
+@import '../../../assets/scss/variables.scss';
+
+.btn {
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 116%;
+  color: $white;
+  border-radius: 8px;
+  transition: linear .15s background-color;
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.primary-btn {
+  width: 100%;
+  height: 48px;
+  max-width: 296px;
+  padding: 16px 24px;
+  background-color: $orange-100;
+  @media (min-width: 1200px) {
+    height: 64px;
+  }
+
+  &:hover {
+    background-color: $orange-80;
+  }
+
+  &:active {
+    background-color: $orange-120;
+  }
+}
