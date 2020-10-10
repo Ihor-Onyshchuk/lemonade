@@ -9,7 +9,7 @@ This App based on the game 'Who Wants to Be a Millionaire?'.
 
 
 ## Getting started
-You can try play game clicking on demo link ['here'https://ihor-onyshchuk.github.io/lemonade/].
+You can try play game clicking on demo link ['here'(https://ihor-onyshchuk.github.io/lemonade/)].
 
 Or clone on your local machine for developing or testing purposes.
 
