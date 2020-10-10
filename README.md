@@ -1,7 +1,7 @@
 # Lemondae
 ## Intro
 
-Welcome to Lemonade \U+1F603!
+Welcome to Lemonade \U{1F603!}
 
 This App based on the game 'Who Wants to Be a Millionaire?'.
 
