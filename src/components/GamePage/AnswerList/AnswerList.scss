@@ -121,7 +121,7 @@
     }
 
     // Hover
-    &:not(.selected):not(.correct):hover {
+    &:not(.selected):not(.correct):not(.wrong):hover {
       svg path {
         stroke: $orange-100;
       }
