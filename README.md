@@ -1,9 +1,11 @@
 # Lemondae
+## Intro
+
 Welcome to Lemonade!
 
 This App based on the game 'Who Wants to Be a Millionaire?'.
 
-'Who Wants to Be a Millionaire' is an international television game show franchise of British origin.
+'Who Wants to Be a Millionaire?' is an international television game show franchise of British origin.
 
 ## Getting started
 
