@@ -9,7 +9,7 @@ This App based on the game 'Who Wants to Be a Millionaire?'.
 
 
 ## Getting started
-You can try play game clicking on demo link ['here'(https://ihor-onyshchuk.github.io/lemonade/)].
+You can try play game clicking on demo link [here](https://ihor-onyshchuk.github.io/lemonade/).
 
 Or clone on your local machine for developing or testing purposes.
 
@@ -21,3 +21,4 @@ Or clone on your local machine for developing or testing purposes.
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+[JSON API](https://api.chucknorris.io/) for hand-curated Chuck Norris facts.
