@@ -4,17 +4,15 @@ import cx from 'classnames';
 
 import './Button.scss';
 
-const Button = ({name, onClick, className}) => {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={cx('btn', className)}
-    >
-      {name}
-    </button>
-  );
-};
+const Button = ({ name, onClick, className }) => (
+  <button
+    type="button"
+    onClick={onClick}
+    className={cx('btn', className)}
+  >
+    {name}
+  </button>
+);
 
 Button.propTypes = {
   name: T.string.isRequired,

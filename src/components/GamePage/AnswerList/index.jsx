@@ -12,8 +12,8 @@ const svgCellDecoration = (
   </svg>
 );
 
-const AnswerList = ({answers = [], onSubmit, answerState}) => {
-  const {answer: currAnswer, ...restState} = answerState;
+const AnswerList = ({ answers = [], onSubmit, answerState }) => {
+  const { answer: currAnswer, ...restState } = answerState;
 
   return (
     <div className="game-answers">
@@ -28,7 +28,7 @@ const AnswerList = ({answers = [], onSubmit, answerState}) => {
             <span className="variant">{variantMarkers[i]}</span>
             <span className="text">{answer}</span>
           </div>
-        </div >
+        </div>
       ))}
     </div>
   );

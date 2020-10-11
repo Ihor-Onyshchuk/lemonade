@@ -2,7 +2,7 @@ import React from 'react'
 import cx from 'classnames';
 import T from 'prop-types';
 
-import {numberWithDelimiter} from '../../../utils';
+import { numberWithDelimiter } from '../../../utils';
 
 import './PriseList.scss';
 
@@ -18,19 +18,22 @@ const svgCellMobile = (
   </svg>
 );
 
-const PriseList = ({priseList, step, className}) => (
+const PriseList = ({ priseList, step, className }) => (
   <div className={cx('prise-list', className)}>
     {priseList.map((prise, i) => (
       <div
         key={prise}
-        className={cx("prise-list-item", {
+        className={cx('prise-list-item', {
           'earned': i < step,
           'active': i === step
         })}
       >
         {svgCellMobile}
         {svgCell}
-        <span>&#36;{numberWithDelimiter(prise)}</span>
+        <span>
+          &#36;
+          {numberWithDelimiter(prise)}
+        </span>
       </div>
     ))}
   </div>

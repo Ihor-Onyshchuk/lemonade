@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import {keys} from 'lodash';
+import { keys } from 'lodash';
 
 import SalutePage from './components/SalutePage/SalutePage';
 import GamePage from './components/GamePage/GamePage';
 
-import {getQuestion} from './services';
-import {drumroll} from './utils'
-import {data} from './data';
+import { getQuestion } from './services';
+import { drumroll } from './utils';
+import { data } from './data';
 
 const priseList = keys(data);
 const saluteModes = ['start', 'end'];
@@ -37,25 +37,25 @@ const App = () => {
   };
 
   const handleAnswerSubmit = (answer) => {
-    setAnswerState({ ...answerState, answer, selected: true});
+    setAnswerState({ ...answerState, answer, selected: true });
     const isCorrect = answer.includes(currentQuestion.correct);
     const isGameOver = step === priseList.length - 1;
 
     drumroll().then(() => {
       if (isCorrect) {
-        setAnswerState((prevState) => ({...prevState, selected: false, correct: true}));
+        setAnswerState((prevState) => ({ ...prevState, selected: false, correct: true }));
         drumroll().then(() => {
           setAnswerState(defaultAnswerState);
-          setStep(step + 1)
+          setStep(step + 1);
 
           if (isGameOver) setMode('end');
-        })
+        });
       } else {
-        setAnswerState((prevState) => ({...prevState, selected: false, wrong: true}));
+        setAnswerState((prevState) => ({ ...prevState, selected: false, wrong: true }));
         drumroll().then(() => {
           setAnswerState(defaultAnswerState);
           setMode('end');
-        })
+        });
       }
     });
   };

@@ -1,10 +1,10 @@
-import {shuffle, take} from 'lodash';
+import { shuffle, take } from 'lodash';
 
 const dummyAnswers = ['None', 'All', 'Else'];
 
 export const getQuestion = (data, step = 500) => {
   const currentQuestion = shuffle(data[step])[0];
-  const {answers, corrects, question} = currentQuestion;
+  const { answers, corrects, question } = currentQuestion;
 
   const correctAnswer = shuffle(corrects)[0];
 
@@ -28,5 +28,7 @@ export const getQuestion = (data, step = 500) => {
     question,
     correct: correctAnswer,
     answers: preparedAnswers,
-  }
-}
+  };
+};
+
+export default getQuestion;

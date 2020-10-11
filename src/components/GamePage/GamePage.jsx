@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import T from 'prop-types';
 
 import Modal from '../common/Modal';
@@ -9,7 +9,7 @@ import AnswerList from './AnswerList';
 import './GamePage.scss';
 
 const GamePage = ({
-  currentQuestion, answerState, priseList, step, onSubmit
+  currentQuestion, answerState, priseList, step, onSubmit,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const renderedPriseList = <PriseList priseList={priseList} step={step} />;
@@ -53,6 +53,6 @@ GamePage.propTypes = {
   priseList: T.array.isRequired,
   step: T.number.isRequired,
   onSubmit: T.func.isRequired,
-}
+};
 
 export default GamePage;
