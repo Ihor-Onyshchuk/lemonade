@@ -6,8 +6,7 @@ import './Burger.scss';
 
 const Burger = ({ open, onClick }) => (
   <div
-    role="button"
-    className={cx("toggle", {'toggle-open': open})} 
+    className={cx('toggle', { 'toggle-open': open })}
     onClick={() => onClick(!open)}
   >
     <div className="toggle-bar1" />

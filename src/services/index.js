@@ -30,5 +30,3 @@ export const getQuestion = (data, step = 500) => {
     answers: preparedAnswers,
   };
 };
-
-export default getQuestion;
