@@ -138,11 +138,11 @@ export const data = {
     },
     {
       question: 'Which of these is a 2003 Disney computer-animated film?',
-      corrects: ['Locating Remo'],
+      corrects: ['Finding Nemo'],
       answers: [
         'Discovering Lemo',
         'Unearthing Zemo',
-        'Finding Nemo',
+        'Locating Remo',
       ],
     },
   ],
