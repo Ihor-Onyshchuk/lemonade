@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lemonade/static/css/main.94571068.chunk.css",
+    "main.css": "/lemonade/static/css/main.f8073a42.chunk.css",
     "main.js": "/lemonade/static/js/main.b9a63471.chunk.js",
     "main.js.map": "/lemonade/static/js/main.b9a63471.chunk.js.map",
     "runtime-main.js": "/lemonade/static/js/runtime-main.5e61336c.js",
@@ -8,16 +8,16 @@
     "static/js/2.675157c9.chunk.js": "/lemonade/static/js/2.675157c9.chunk.js",
     "static/js/2.675157c9.chunk.js.map": "/lemonade/static/js/2.675157c9.chunk.js.map",
     "index.html": "/lemonade/index.html",
-    "precache-manifest.9253c56b607a1b317db8c9326452afbd.js": "/lemonade/precache-manifest.9253c56b607a1b317db8c9326452afbd.js",
+    "precache-manifest.6a84964afb6404fe63b0500577d397c4.js": "/lemonade/precache-manifest.6a84964afb6404fe63b0500577d397c4.js",
     "service-worker.js": "/lemonade/service-worker.js",
-    "static/css/main.94571068.chunk.css.map": "/lemonade/static/css/main.94571068.chunk.css.map",
+    "static/css/main.f8073a42.chunk.css.map": "/lemonade/static/css/main.f8073a42.chunk.css.map",
     "static/js/2.675157c9.chunk.js.LICENSE.txt": "/lemonade/static/js/2.675157c9.chunk.js.LICENSE.txt",
     "static/media/lucas.svg": "/lemonade/static/media/lucas.737e6436.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5e61336c.js",
     "static/js/2.675157c9.chunk.js",
-    "static/css/main.94571068.chunk.css",
+    "static/css/main.f8073a42.chunk.css",
     "static/js/main.b9a63471.chunk.js"
   ]
 }
