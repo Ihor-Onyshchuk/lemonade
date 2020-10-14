@@ -7,9 +7,11 @@
   align-items: center;
   flex-direction: column-reverse;
   overflow-x: hidden;
+  @media (min-width: 375px) {
+    justify-content: center;
+  }
   @media (min-width: 1200px) {
     padding: 64px 0;
-    justify-content: center;
   }
 
   &-item {
